@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <script src="weather.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+</head>
+<body onload="Start()">
+    <div class="content">
+        <div class="nav">
+            <a href="company.html">Company API</a>
+            <a href="index.html">Weather API</a>
+            <a href="forecast.html">Forecast API</a>
+        </div>
+        <table class="info-table">
+            <thead>
+                <tr class="header-header">
+                    <th><input id="city-field" placeholder="City" class="city-input" type="text"></th>
+                    <th>
+                        <select name="unit" id="unit">
+                            <option value="" disabled selected>Pick a measurement unit</option>
+                            <option value="metric">Metric</option>
+                            <option value="standard">Standard</option>
+                            <option value="imperial">Imperial</option>
+                        </select>
+                    </th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th><button id="submit">Check</button></th>
+                </tr>
+                <tr>
+                    <th>Img</th>
+                    <th>City</th>
+                    <th>Country</th>
+                    <th>Temperatur</th>
+                    <th>Latitude</th>
+                    <th>Longtitude</th>
+                    <th>Wind Speed</th>
+                    <th>Visibility</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="img-field"><img id="weather-img"></td>
+                    <td class="result" id="city"></td>
+                    <td class="result" id="country"></td>
+                    <td class="result" id="temp"></td>
+                    <td class="result" id="latitude"></td>
+                    <td class="result" id="longtitude"></td>
+                    <td class="result" id="wind-speed"></td>
+                    <td class="result" id="visibility"></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
